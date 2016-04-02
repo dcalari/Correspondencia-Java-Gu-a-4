@@ -1,3 +1,3 @@
 # Correspondencia-Java-Gu-a-4
-Java Guía 4
+Java Guía 4, Aplicación desarrolada en JAVA con interfaz grafica, se utilizo Netbeans y SQL Server 2012
 // Esta aplicación es una solución práctica  y tecnológica con la cual se busca tener un registro y un control de todos los documentos, paquetes o tipos de correspondencia fisica que llegan al departamento de mensajería y/o correspondencia de una empresa por medio de un número de radicado el cual se va poniendo en cola a medida que van llegando los distintos remitentes con su correspondencia, para esto se piden los datos del remitente y el destinatario, como nombre de remitente, No. de documento, nombre del destinatario, empresa y por ultimo se asigna la fecha de entrega para llevar el control por medio de esta así como del numero de radicado.
