@@ -1,0 +1,180 @@
+package org.netbeans.lib.awtextra;
+
+import java.awt.Dimension;
+import java.awt.Point;
+import java.io.Serializable;
+
+public class AbsoluteConstraints implements Serializable {
+
+    static final long serialVersionUID = 5261460716622152494L;
+    public int x;
+    public int y;
+    public int width;
+    public int height;
+
+    public AbsoluteConstraints(Point point) {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: aload_1
+         * 2: getfield      java/awt/Point.x:I
+         * 5: aload_1
+         * 6: getfield      java/awt/Point.y:I
+         * 9: invokespecial org/netbeans/lib/awtextra/AbsoluteConstraints."<init>":(II)V
+         * 12: return
+         *  */
+        // </editor-fold>
+    }
+
+    public AbsoluteConstraints(int i, int i1) {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: invokespecial java/lang/Object."<init>":()V
+         * 4: aload_0
+         * 5: iconst_m1
+         * 6: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 9: aload_0
+         * 10: iconst_m1
+         * 11: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 14: aload_0
+         * 15: iload_1
+         * 16: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.x:I
+         * 19: aload_0
+         * 20: iload_2
+         * 21: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.y:I
+         * 24: return
+         *  */
+        // </editor-fold>
+    }
+
+    public AbsoluteConstraints(Point point, Dimension dmnsn) {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: invokespecial java/lang/Object."<init>":()V
+         * 4: aload_0
+         * 5: iconst_m1
+         * 6: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 9: aload_0
+         * 10: iconst_m1
+         * 11: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 14: aload_0
+         * 15: aload_1
+         * 16: getfield      java/awt/Point.x:I
+         * 19: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.x:I
+         * 22: aload_0
+         * 23: aload_1
+         * 24: getfield      java/awt/Point.y:I
+         * 27: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.y:I
+         * 30: aload_2
+         * 31: ifnull        50
+         * 34: aload_0
+         * 35: aload_2
+         * 36: getfield      java/awt/Dimension.width:I
+         * 39: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 42: aload_0
+         * 43: aload_2
+         * 44: getfield      java/awt/Dimension.height:I
+         * 47: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 50: return
+         *  */
+        // </editor-fold>
+    }
+
+    public AbsoluteConstraints(int i, int i1, int i2, int i3) {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: invokespecial java/lang/Object."<init>":()V
+         * 4: aload_0
+         * 5: iconst_m1
+         * 6: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 9: aload_0
+         * 10: iconst_m1
+         * 11: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 14: aload_0
+         * 15: iload_1
+         * 16: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.x:I
+         * 19: aload_0
+         * 20: iload_2
+         * 21: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.y:I
+         * 24: aload_0
+         * 25: iload_3
+         * 26: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 29: aload_0
+         * 30: iload         4
+         * 32: putfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 35: return
+         *  */
+        // </editor-fold>
+    }
+
+    public int getX() {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.x:I
+         * 4: ireturn
+         *  */
+        // </editor-fold>
+    }
+
+    public int getY() {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.y:I
+         * 4: ireturn
+         *  */
+        // </editor-fold>
+    }
+
+    public int getWidth() {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 4: ireturn
+         *  */
+        // </editor-fold>
+    }
+
+    public int getHeight() {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 4: ireturn
+         *  */
+        // </editor-fold>
+    }
+
+    public String toString() {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: new           java/lang/StringBuffer
+         * 3: dup
+         * 4: invokespecial java/lang/StringBuffer."<init>":()V
+         * 7: aload_0
+         * 8: invokespecial java/lang/Object.toString:()Ljava/lang/String;
+         * 11: invokevirtual java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+         * 14: ldc            [x=
+         * 16: invokevirtual java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+         * 19: aload_0
+         * 20: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.x:I
+         * 23: invokevirtual java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+         * 26: ldc           , y=
+         * 28: invokevirtual java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+         * 31: aload_0
+         * 32: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.y:I
+         * 35: invokevirtual java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+         * 38: ldc           , width=
+         * 40: invokevirtual java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+         * 43: aload_0
+         * 44: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.width:I
+         * 47: invokevirtual java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+         * 50: ldc           , height=
+         * 52: invokevirtual java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+         * 55: aload_0
+         * 56: getfield      org/netbeans/lib/awtextra/AbsoluteConstraints.height:I
+         * 59: invokevirtual java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+         * 62: ldc           ]
+         * 64: invokevirtual java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+         * 67: invokevirtual java/lang/StringBuffer.toString:()Ljava/lang/String;
+         * 70: areturn
+         *  */
+        // </editor-fold>
+    }
+}
