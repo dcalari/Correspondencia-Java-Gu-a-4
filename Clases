@@ -1,0 +1,46 @@
+
+package clases;
+
+public class Correo {
+    
+    public String remitente;
+    public String empresa;
+    public String fechadocumento;
+
+    //Constructor
+    
+    public Correo(String remitente, String empresa, String fechadocumento) {
+        this.remitente = remitente;
+        this.empresa = empresa;
+        this.fechadocumento = fechadocumento;
+    }
+
+    //get y set de las variables definidas anteriormente
+    
+    public String getRemitente() {
+        return remitente;
+    }
+
+    public void setRemitente(String remitente) {
+        this.remitente = remitente;
+    }
+
+    public String getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
+    }
+
+    public String getFechadocumento() {
+        return fechadocumento;
+    }
+
+    public void setFechadocumento(String fechadocumento) {
+        this.fechadocumento = fechadocumento;
+    }
+    
+    
+    
+}
