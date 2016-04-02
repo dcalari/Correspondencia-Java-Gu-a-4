@@ -1,0 +1,77 @@
+
+package conexion;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+
+
+public class conectate {
+
+static String login ="usuario";
+static String password="usuario";
+static String url="jdbc.odbc:correspondencia";
+Connection conn=null;
+String driver="sun.jdbc.odbc.JdbcOdbcDriver";
+
+//Constructor de la clase conexion
+    public conectate() {
+        
+        try {
+            Class.forName (driver);
+            conn=DriverManager.getConnection (url, login, password);
+            if(conn!=null){
+                JOptionPane.showMessageDialog (null, "CONEXIÓN EXITOSA");
+            }
+        } catch (SQLException | ClassNotFoundException e){
+            JOptionPane.showMessageDialog (null, e);
+        }
+    }
+    
+    public Connection getconnection(){
+        return conn;
+    }
+        
+    public void desconectar(){
+        conn=null;
+        if (conn!=null){
+            JOptionPane.showMessageDialog (null, "No se pudo cerrar la conexión a la base de datos");
+        }
+    }
+    
+    //METODO PARA LISTAR LAS CONSULTAS QUE RETORNAN VALORES
+    public ResultSet Listar(String Cad){
+        
+        try {
+            
+            Class.forName(driver).newInstance();
+            Connection cn = DriverManager.getConnection (url, login, password);
+            
+            PreparedStatement da = cn.prepareStatement (Cad);
+            ResultSet tbl = da.executeQuery();
+            return tbl;
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException e){
+            javax.swing.JOptionPane.showMessageDialog (null, e.getMessage());
+            return null;
+        }    
+    }
+    //METODO PARA EJECUTAR LAS CONSULTAS
+    public String Ejecutar (String Cad){
+        
+        try {
+            Class.forName(driver).newInstance();
+            Connection cn = DriverManager.getConnection (url, login, password);
+            
+            PreparedStatement da = cn.prepareStatement (Cad);
+            int r = da.executeUpdate();
+            return "REGISTROS CREADOS CON EXITO";
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException e){
+            javax.swing.JOptionPane.showMessageDialog (null, e.getMessage());
+            return "ERROR" + e.getMessage();
+        }
+    }
+    
+}
